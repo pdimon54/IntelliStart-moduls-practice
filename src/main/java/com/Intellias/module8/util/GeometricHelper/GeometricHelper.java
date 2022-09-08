@@ -8,12 +8,12 @@ public class GeometricHelper{
         return shape.getClass().getSimpleName();
     }
 
-    public static double getArea(Shape shape) {
-        return shape.getArea();
+    public static double getArea(Geometric figure) {
+        return figure.getArea();
     }
 
-    public static double getPerimeter(Shape shape) {
-        return shape.getPerimeter();
+    public static double getPerimeter(Geometric figure) {
+        return figure.getPerimeter();
     }
     public static String getCenterCoordinate(Shape shape) {
         return shape.getCenterCoordinate();

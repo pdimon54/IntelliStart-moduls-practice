@@ -2,14 +2,10 @@ package com.Intellias.module8.models;
 
 public class Quad extends Shape {
 
-    private int centerX;
-    private int centerY;
     private int sideSize;
 
-
     public Quad(int centerX, int centerY, int sideSize) {
-        this.centerX = centerX;
-        this.centerY = centerY;
+        super(centerX,centerY);
         this.sideSize = sideSize;
     }
 
@@ -22,8 +18,5 @@ public class Quad extends Shape {
     public double getPerimeter() {
         return 4*sideSize;
     }
-    @Override
-    public String getCenterCoordinate() {
-        return "x = " + centerX + "; y = " + centerY;
-    }
+
 }

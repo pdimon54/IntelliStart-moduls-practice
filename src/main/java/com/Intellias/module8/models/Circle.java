@@ -2,21 +2,16 @@ package com.Intellias.module8.models;
 
 public class Circle extends Shape {
 
-    private int centerX;
-    private int centerY;
     private int radius;
 
     public Circle(int centerX, int centerY, int radius) {
-        this.centerX = centerX;
-        this.centerY = centerY;
+        super(centerX,centerY);
         this.radius = radius;
     }
 
-
-
     @Override
     public double getArea() {
-        return 3.14*Math.pow(radius,2);
+        return Math.PI*Math.pow(radius,2);
     }
 
     @Override
@@ -24,8 +19,4 @@ public class Circle extends Shape {
         return 2*3.14*radius;
     }
 
-    @Override
-    public String getCenterCoordinate() {
-        return "x = " + centerX + "; y = " + centerY;
-    }
 }
